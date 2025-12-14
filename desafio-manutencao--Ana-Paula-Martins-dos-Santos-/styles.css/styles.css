@@ -1,0 +1,67 @@
+/* reset básico */
+     *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+        }
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .tudo {
+            max-width: 1000px;
+            background-color: white;
+            margin: 0 auto;
+            padding: 0 20px; 
+        }
+
+        #topo {
+            background-color: #333;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .texto-ruim {
+            color: #555;
+        }
+
+      .botoes {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.btn {
+    padding: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: darkred;
+}
+
+@media (max-width: 768px) {
+    .servicos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tudo {
+        padding: 10px;
+    }
+
+    .topo {
+        padding: 20px 10px;
+    }
+}
