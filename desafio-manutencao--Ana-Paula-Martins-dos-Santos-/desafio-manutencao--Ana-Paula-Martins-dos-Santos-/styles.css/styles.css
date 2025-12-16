@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Título principal */
+.titulo-grande {
+  background-color: #333;
+  color: #ffffff;
+  padding: 1.25rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* Centralização genérica */
+.centralizado {
+  text-align: center;
+}
+
+/* Subtítulo */
+.subtitulo {
+  background-color: #333;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #f0eaea;
+  padding-bottom: 1rem;
+}
+
+/* Container principal */
+.tudo {
+  max-width: 1000px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Cabeçalho */
+.topo {
+  background-color: #333;
+  color: #ffffff;
+  padding: 20px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Texto secundário */
+.texto-ruim {
+  color: #555;
+}
+
+/* Área de botões */
+.botoes {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Botão */
+.btn {
+  padding: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: darkred;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .servicos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tudo {
+    padding: 10px;
+  }
+
+  .topo {
+    padding: 20px 10px;
+  }
+}
+
+/* Imagem de soluções em tecnologia */
+@media (max-width: 767px) {
+  .servicos-imagem {
+    margin: 1.5rem 0;
+    padding: 0 0.5rem;
+  }
+
+  .servicos-imagem img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+}
